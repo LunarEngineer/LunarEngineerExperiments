@@ -47,6 +47,7 @@
 	// Uncomment to connect as a non-root user if you've added one. See https://aka.ms/vscode-remote/containers/non-root.
 	// "remoteUser": "vscode"
 
-	// This lets me mount in the local folder that I write experimental data to.
-	"mounts": ["source=experiments,target=/experiments,type=volume"]
+	// This mounts in a folder to write experimental data to.
+	// This mounts in a folder to contain and use secrets without embedding them in an image.
+	"mounts": ["source=experiments,target=/experiments,type=volume", "source=secrets,target=/secrets,type=volume"]
 }
