@@ -1,0 +1,2 @@
+# We ignore *anything* that we could output.
+src/_build

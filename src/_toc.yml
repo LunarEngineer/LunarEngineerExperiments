@@ -1,0 +1,13 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+# Intended structure:
+
+# * Experiments - Contains a set of folders identifying experiments by a project number. Each folder contains metadata for the project and any analysis and / or experimentation done.
+# * Data - Contains either small datasets versioned with DVC or links to locations of large datasets versioned with DVC and exposed via https://github.com/ckan/ckan
+format: jb-book
+root: intro
+chapters:
+- file: sample
+chapters:
+- glob: experiments/*

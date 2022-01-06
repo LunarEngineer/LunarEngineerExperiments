@@ -8,5 +8,5 @@ FROM python:3.9-slim-buster
 RUN apt-get update && apt-get install -y \
     git\
  && rm -rf /var/lib/apt/lists/*
-RUN pip3 install ipykernel -U --user --force-reinstall
+RUN pip3 install ipykernel jupyter-book -U --user --force-reinstall
 ENTRYPOINT /bin/bash
